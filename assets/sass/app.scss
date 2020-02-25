@@ -1,9 +1,14 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Open+Sans:400,700&display=swap');
 /* variables */
 @import "variables";
-
 /* mixin */
 @import "mixin";
-
 /* main */
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
+@media (max-width: $breakpoint-md) {
+  @import "jquery-drawer/scss/drawer.scss";
+}
 @import "reset";
 @import "parts";

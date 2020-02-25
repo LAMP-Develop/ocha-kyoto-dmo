@@ -67,6 +67,11 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
+button:focus,
+input:focus {
+  outline: 0;
+}
+
 p {
   margin: 0 auto;
 }

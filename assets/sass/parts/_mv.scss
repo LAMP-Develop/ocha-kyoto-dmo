@@ -1,0 +1,21 @@
+.mv {
+  box-sizing: border-box;
+  padding: 0 $font-size-base;
+}
+
+.slick-dots {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin: $font-size-base*0.5 0 0 0;
+
+  li {
+    button {
+      &::before {
+        color: $primary !important;
+      }
+    }
+  }
+}

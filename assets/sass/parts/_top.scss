@@ -1,0 +1,166 @@
+.tours-slider-wrap {
+  z-index: 1;
+  position: relative;
+
+  .bg-tex {
+    z-index: -1;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    width: 50vw;
+    height: 110%;
+    transform: translate(-50%);
+    background: url("../images/bg_tex.png") no-repeat center center;
+    background-color: rgba($primary, 0.1);
+    background-size: cover;
+  }
+}
+
+.tours-slider {
+  .slick-slide {
+    opacity: 0.5;
+    margin: 0 $font-size-base*0.5;
+
+    &.slick-active {
+      opacity: 1;
+    }
+
+    h3 {
+      margin: $font-size-base 0;
+      font-size: $font-size-base*1.25;
+    }
+
+    p {
+      font-size: $font-size-base*0.875;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.charms {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  .inner {
+    z-index: 1;
+    position: relative;
+    width: 25%;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    a {
+      position: relative;
+      z-index: 2;
+      display: block;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: $font-size-base*4 $font-size-base*1.5 $font-size-base*1.5;
+
+      &::after {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        display: block;
+        width: 96%;
+        height: 96%;
+        border: solid 1px $white;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    &::after {
+      z-index: 1;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($dark, 0.5);
+    }
+
+    h3 {
+      position: relative;
+      z-index: 2;
+      font-size: $font-size-base*1.5;
+      font-weight: normal;
+      color: $white;
+      margin-bottom: 1em;
+    }
+
+    p {
+      position: relative;
+      z-index: 2;
+      font-size: $font-size-base*0.875;
+      color: $white;
+    }
+
+    &:nth-child(1) {
+      background-image: url("../images/uji.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../images/joyo.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../images/yawata.png");
+    }
+
+    &:nth-child(4) {
+      background-image: url("../images/kyotanabe.png");
+    }
+
+    &:nth-child(5) {
+      background-image: url("../images/kidugawa.png");
+    }
+
+    &:nth-child(6) {
+      background-image: url("../images/kumiyama.png");
+    }
+
+    &:nth-child(7) {
+      background-image: url("../images/ide.png");
+    }
+
+    &:nth-child(8) {
+      background-image: url("../images/ujitawara.png");
+    }
+
+    &:nth-child(9) {
+      background-image: url("../images/kasagi.png");
+    }
+
+    &:nth-child(10) {
+      background-image: url("../images/wazuka.png");
+    }
+
+    &:nth-child(11) {
+      background-image: url("../images/seika.png");
+    }
+
+    &:nth-child(12) {
+      background-image: url("../images/yamashiro.png");
+    }
+  }
+}
