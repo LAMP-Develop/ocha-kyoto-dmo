@@ -1,4 +1,9 @@
-// bootstrap関連
-@import 'custom-colors'; // テーマカラー
-@import 'custom-font-size'; // テーマフォントサイズ
-@import '~bootstrap/scss/bootstrap';
+/* variables */
+@import "variables";
+
+/* mixin */
+@import "mixin";
+
+/* main */
+@import "reset";
+@import "parts";
