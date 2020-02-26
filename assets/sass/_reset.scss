@@ -109,6 +109,10 @@ h6 {
   padding: 0;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 mark {
   background-color: #ff0;
   color: $body;

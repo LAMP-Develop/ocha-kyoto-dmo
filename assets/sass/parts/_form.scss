@@ -1,0 +1,29 @@
+.wpcf7-form {
+  max-width: $breakpoint-md;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    td,
+    th {
+      text-align: left;
+      border-top: solid 1px #F6F6ED;
+      box-sizing: border-box;
+      padding: $font-size-base*0.5;
+    }
+
+    td {
+      input:not([type="radio"]),
+      textarea {
+        background-color: #F6F6ED;
+        border: 0;
+        box-sizing: border-box;
+        padding: $font-size-base*0.5;
+        width: 100%;
+      }
+    }
+  }
+}

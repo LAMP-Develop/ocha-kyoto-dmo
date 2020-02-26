@@ -13,6 +13,9 @@
     background: url("../images/bg_tex.png") no-repeat center center;
     background-color: rgba($primary, 0.1);
     background-size: cover;
+    @include media-md() {
+      width: 80vw;
+    }
   }
 }
 
@@ -56,6 +59,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include media-md() {
+      width: 100%;
+    }
 
     a {
       position: relative;
@@ -161,6 +167,122 @@
 
     &:nth-child(12) {
       background-image: url("../images/yamashiro.png");
+    }
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "movie youtube-1" "movie youtube-2" "movie youtube-3";
+  @include media-md() {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "movie" "youtube-1" "youtube-2" "youtube-3";
+  }
+
+  .movie {
+    position: relative;
+    grid-area: movie;
+
+    @include media-md() {
+      height: 50vw;
+    }
+
+    img {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .abs {
+      z-index: 2;
+      position: absolute;
+      bottom: $font-size-base;
+      left: $font-size-base;
+
+      h2 {
+        font-size: $font-size-base*1.5;
+        margin: 0;
+      }
+    }
+  }
+
+  .youtube-1 {
+    grid-area: youtube-1;
+  }
+
+  .youtube-2 {
+    grid-area: youtube-2;
+  }
+
+  .youtube-3 {
+    grid-area: youtube-3;
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+    @include media-md() {
+      height: 50vw;
+    }
+  }
+}
+
+.gallery-pics {
+  .slick-slide {
+    margin: 0 $font-size-base*0.5;
+  }
+}
+
+.news-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  > div {
+    width: 48%;
+    @include media-md() {
+      width: 100%;
+      margin-bottom: $font-size-base*3;
+    }
+  }
+}
+
+.news-list {
+  a {
+    display: block;
+    width: 100%;
+    margin-bottom: $font-size-base;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p,
+    time {
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      margin: 0;
+      color: $dark;
+      line-height: 1;
+      font-size: $font-size-base*0.875;
+    }
+
+    time {
+      color: $white;
+      background-color: $primary;
+      margin-right: 1rem;
+      padding: 5px 8px;
     }
   }
 }

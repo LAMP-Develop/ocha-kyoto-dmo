@@ -19,9 +19,9 @@ $wp_url = get_template_directory_uri(); ?>
 <nav class="drawer-nav" role="navigation">
 <ul class="drawer-menu">
 <li>
-<a class="drawer-menu-item" href="<?php echo $home; ?>/">
+<a class="drawer-menu-item" href="<?php echo $home; ?>/about/">
 <img src="<?php echo $wp_url; ?>/lib/images/icon_about.png" alt="">
-<span>About</span>
+<span>What is a DMO?</span>
 </a>
 </li>
 <li>
@@ -48,14 +48,24 @@ $wp_url = get_template_directory_uri(); ?>
 <span>Blog</span>
 </a>
 </li>
+<li class="sp-only">
+<a class="drawer-menu-item" href="<?php echo $home; ?>/">
+<span>News</span>
+</a>
+</li>
+<li class="sp-only">
+<a class="drawer-menu-item" href="<?php echo $home; ?>/inquiry/">
+<span>Inquiry</span>
+</a>
+</li>
 </ul>
 </nav>
 <button type="button" class="drawer-toggle drawer-hamburger sp-only">
 <span class="drawer-hamburger-icon"></span>
 </button>
-<div class="other-link">
-<a class="crimson b" href="<?php echo $home; ?>/">Information</a>
-<a class="crimson b" href="<?php echo $home; ?>/">Contact Us</a>
+<div class="other-link pc-only">
+<a class="crimson b" href="<?php echo $home; ?>/">News</a>
+<a class="crimson b" href="<?php echo $home; ?>/inquiry/">Inquiry</a>
 </div>
 </div>
 <img class="decoration" src="<?php echo $wp_url; ?>/lib/images/header_bottom.png" alt="装飾">

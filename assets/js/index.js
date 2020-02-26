@@ -38,6 +38,28 @@ $(document).ready(function() {
     centerPadding: '15vw',
     autoplay: true,
     autoplaySpeed: 3000,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
+  });
+  $('.gallery-pics').slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 5,
+    centerMode: true,
+    centerPadding: '10vw',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
   });
 });

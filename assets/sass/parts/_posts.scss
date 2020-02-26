@@ -1,0 +1,58 @@
+.posts-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .posts {
+    width: 31%;
+    box-sizing: border-box;
+
+    @include media-md() {
+      width: 100%;
+      margin-bottom: $font-size-base*1.5;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    figure {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .cat {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: $primary;
+        color: $white;
+        display: inline-block;
+        vertical-align: baseline;
+        box-sizing: border-box;
+        padding: $font-size-base*0.3;
+        line-height: 1;
+        font-size: $font-size-base*0.7;
+      }
+    }
+
+    h3 {
+      font-size: $font-size-base;
+      font-weight: normal;
+      margin: 0.5em 0;
+    }
+
+    time {
+      display: block;
+      font-size: $font-size-base*0.875;
+      margin: 0;
+    }
+  }
+}

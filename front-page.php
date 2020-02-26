@@ -169,4 +169,178 @@ get_header(); ?>
   </div>
 </section>
 
+<section class="sec">
+  <div class="wrap">
+    <h2 class="ttl2 txt-c">
+      <span class="uppercase crimson">EVENTS</span>
+      <img src="<?php echo $wp_url; ?>/lib/images/icon_events.png" alt="tours">
+    </h2>
+    <div class="tours-slider-wrap">
+      <div class="bg-tex"></div>
+      <div class="posts-list">
+        <article class="posts">
+          <a href="#">
+            <figure>
+              <span class="cat">宇治市</span>
+              <img src="<?php echo $wp_url; ?>/lib/images/blog_sample.png" alt="">
+            </figure>
+            <h3>タイトル</h3>
+            <time class="crimson">2020.02.02</time>
+          </a>
+        </article>
+        <article class="posts">
+          <a href="#">
+            <figure>
+              <span class="cat">宇治市</span>
+              <img src="<?php echo $wp_url; ?>/lib/images/blog_sample.png" alt="">
+            </figure>
+            <h3>タイトル</h3>
+            <time class="crimson">2020.02.02</time>
+          </a>
+        </article>
+        <article class="posts">
+          <a href="#">
+            <figure>
+              <span class="cat">宇治市</span>
+              <img src="<?php echo $wp_url; ?>/lib/images/blog_sample.png" alt="">
+            </figure>
+            <h3>タイトル</h3>
+            <time class="crimson">2020.02.02</time>
+          </a>
+        </article>
+      </div>
+    </div>
+    <div class="btn txt-c mt-2">
+      <a class="crimson" href="#">More</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="grid-container">
+      <div class="movie">
+        <img src="<?php echo $wp_url; ?>/lib/images/youtube_sample.png" alt="">
+        <div class="abs">
+          <h2 class="color-white">DMO tour in Video</h2>
+          <div class="btn-2 mt-1">
+            <a class="crimson" href="https://www.youtube.com/channel/UC6rj9P6GqctRmQY5TK0MZpg" target="_blank">YouTube Channel</a>
+          </div>
+        </div>
+      </div>
+      <div class="youtube-1">
+        <iframe src="https://www.youtube.com/embed/uvJpbimn8Gg"></iframe>
+      </div>
+      <div class="youtube-2">
+        <iframe src="https://www.youtube.com/embed/2u6GYNpUnKs"></iframe>
+      </div>
+      <div class="youtube-3">
+        <iframe src="https://www.youtube.com/embed/P3_Bi2kMw3U"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <h2 class="ttl2">
+      <span class="crimson">Photo Gallery</span>
+    </h2>
+  </div>
+  <div class="gallery-pics">
+    <img src="<?php echo $wp_url; ?>/lib/images/gallery_sample.png" alt="">
+    <img src="<?php echo $wp_url; ?>/lib/images/gallery_sample.png" alt="">
+    <img src="<?php echo $wp_url; ?>/lib/images/gallery_sample.png" alt="">
+    <img src="<?php echo $wp_url; ?>/lib/images/gallery_sample.png" alt="">
+    <img src="<?php echo $wp_url; ?>/lib/images/gallery_sample.png" alt="">
+    <img src="<?php echo $wp_url; ?>/lib/images/gallery_sample.png" alt="">
+    <img src="<?php echo $wp_url; ?>/lib/images/gallery_sample.png" alt="">
+  </div>
+  <div class="wrap">
+    <div class="btn txt-c mt-2">
+      <a class="crimson" href="#"><i class="fab fa-instagram mr-05"></i>Instagram</a>
+    </div>
+    <div class="mt-3 txt-c">
+      <a href="#">
+        <img src="<?php echo $wp_url; ?>/lib/images/bnr_gallery.png" alt="">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <h2 class="ttl2-2">
+      <span class="crimson">BLOG</span>
+      <a href="#">Read More<i class="fas fa-chevron-circle-right ml-05 color-primary"></i></a>
+    </h2>
+    <div class="posts-list">
+      <article class="posts">
+        <a href="#">
+          <figure>
+            <img src="<?php echo $wp_url; ?>/lib/images/blog_sample.png" alt="">
+          </figure>
+          <h3>タイトル</h3>
+          <time class="crimson">2020.02.02</time>
+        </a>
+      </article>
+      <article class="posts">
+        <a href="#">
+          <figure>
+            <img src="<?php echo $wp_url; ?>/lib/images/blog_sample.png" alt="">
+          </figure>
+          <h3>タイトル</h3>
+          <time class="crimson">2020.02.02</time>
+        </a>
+      </article>
+      <article class="posts">
+        <a href="#">
+          <figure>
+            <img src="<?php echo $wp_url; ?>/lib/images/blog_sample.png" alt="">
+          </figure>
+          <h3>タイトル</h3>
+          <time class="crimson">2020.02.02</time>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap news-wrap">
+    <div class="news">
+      <h2 class="ttl2-2">
+        <span class="crimson">NEWS</span>
+        <a href="#">Read More<i class="fas fa-chevron-circle-right ml-05 color-primary"></i></a>
+      </h2>
+      <div class="news-list">
+        <a href="#">
+          <time>2020.02.02</time>
+          <p>お知らせお知らせお知らせお知らせ</p>
+        </a>
+        <a href="#">
+          <time>2020.02.02</time>
+          <p>お知らせお知らせお知らせお知らせ</p>
+        </a>
+        <a href="#">
+          <time>2020.02.02</time>
+          <p>お知らせお知らせお知らせお知らせ</p>
+        </a>
+        <a href="#">
+          <time>2020.02.02</time>
+          <p>お知らせお知らせお知らせお知らせ</p>
+        </a>
+      </div>
+    </div>
+    <div class="facebook">
+      <h2 class="ttl2-2">
+        <span class="crimson">Facebook</span>
+      </h2>
+      <div class="fb-feed txt-c">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fochanokyoto%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=321970501560993" width="340" height="340" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer();

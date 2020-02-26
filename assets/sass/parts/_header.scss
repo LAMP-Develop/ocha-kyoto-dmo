@@ -1,5 +1,5 @@
 header {
-  z-index: 1;
+  z-index: 999;
   position: relative;
   border-top: solid 2px $primary;
 
@@ -10,6 +10,9 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     padding: 0 $font-size-base*3;
+    @include media-md() {
+      padding: 0;
+    }
 
     .other-link {
       position: absolute;
@@ -31,27 +34,42 @@ header {
       margin: 0;
       font-size: 0;
       line-height: 1;
+      @include media-md() {
+        img {
+          width: 116px;
+        }
+      }
     }
 
     .drawer-nav {
       position: relative;
       margin-right: $font-size-base*12;
+      @include media-md() {
+        position: fixed;
+        margin-right: 0;
+      }
 
       .drawer-menu {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: nowrap;
+        @include media-md() {
+          display: block;
+        }
 
         li {
           margin-right: $font-size-base*1.5;
+          @include media-md() {
+            margin-right: 0;
+          }
 
           &:last-child {
             margin-right: 0;
           }
 
           .drawer-menu-item {
-            font-size: $font-size-base*1.2;
+            font-size: $font-size-base;
 
             img {
               display: inline-block;
@@ -76,4 +94,14 @@ header {
     left: 0;
     width: 100%;
   }
+}
+
+.drawer-hamburger {
+  background-color: $primary !important;
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+  background-color: $white;
 }
