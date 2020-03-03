@@ -1,0 +1,53 @@
+table.wp-block-advgb-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse !important;
+
+  tr {
+    td {
+      color: $white;
+      background-color: $primary;
+      border: solid 1px $white;
+
+      &:nth-child(2n) {
+        background-color: $third;
+      }
+    }
+  }
+}
+
+.mk-taxi {
+  .wp-block-advgb-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      td {
+        color: $white;
+        background-color: $primary;
+        border: solid 1px $white;
+
+        &:nth-child(2n) {
+          background-color: $third;
+        }
+      }
+
+      &:nth-child(1) {
+        td {
+          background-color: $primary;
+        }
+      }
+
+      &:nth-child(2) {
+        td {
+          background-color: $primary;
+
+          &:nth-child(2n+1) {
+            background-color: $third;
+          }
+        }
+      }
+    }
+  }
+}

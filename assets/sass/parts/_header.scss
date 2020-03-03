@@ -3,6 +3,10 @@ header {
   position: relative;
   border-top: solid 2px $primary;
 
+  &.low {
+    border-bottom: solid 1px $gray;
+  }
+
   .inner {
     position: relative;
     display: flex;

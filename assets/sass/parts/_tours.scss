@@ -1,0 +1,124 @@
+.tour-detail {
+  .tabs {
+    margin-top: 3rem;
+  }
+
+  .tab_item {
+    cursor: pointer;
+    display: block;
+    width: calc(100%/5);
+    text-align: center;
+    float: left;
+    text-align: center;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    box-shadow: 0 0 0.3rem rgba($dark, 0.1);
+  }
+
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+
+  input[name="tab_item"] {
+    display: none;
+  }
+
+  .tab_content {
+    display: none;
+    clear: both;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem 0;
+  }
+
+  #Attractions:checked ~ #Attractions_inner,
+  #Images:checked ~ #Images_inner,
+  #Itinerary:checked ~ #Itinerary_inner,
+  #Overview:checked ~ #Overview_inner,
+  #Tour-details:checked ~ #Tour-details_inner {
+    display: block;
+  }
+
+  .tabs input:checked + .tab_item {
+    background-color: $body;
+    color: #fff;
+  }
+
+  figure {
+    display: block;
+    width: 100%;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border-radius: 0.3rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .gmap {
+    margin-top: 2rem;
+
+    iframe {
+      display: block;
+      border: 0;
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  .attraction {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    .img {
+      width: 50%;
+    }
+
+    .txt {
+      width: 45%;
+
+      h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1.5em;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.to-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  box-shadow: 0 0 0.3rem rgba($dark, 0.1);
+
+  .img {
+    width: 60%;
+  }
+
+  .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+    h3 {
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+}

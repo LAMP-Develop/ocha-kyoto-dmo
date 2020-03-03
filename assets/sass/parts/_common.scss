@@ -560,6 +560,23 @@ body {
   }
 }
 
+.btn-3 {
+  a {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0.5em 3em;
+    color: $white;
+    background-color: $secondary;
+    line-height: 1;
+    transition: 0.3s;
+    font-size: 0.875rem;
+    border-radius: 100px;
+  }
+}
+
 .lower-layer-wrap {
   margin-top: $font-size-base*3;
   @include media-md() {

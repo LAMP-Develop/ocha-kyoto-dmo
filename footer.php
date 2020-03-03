@@ -11,35 +11,14 @@ $wp_url = get_template_directory_uri(); ?>
 <a href="http://www.kyoto-uji-kankou.or.jp/" target="_blank">
 <img src="<?php echo $wp_url; ?>/lib/images/foot_link1.png" alt="">
 </a>
-<a href="http://xn--6oqz6c35b6zh48ipn2e0ys.jp/" target="_blank">
-<img src="<?php echo $wp_url; ?>/lib/images/foot_link2.png" alt="">
-</a>
 <a href="http://www.city.yawata.kyoto.jp/yawata-story/index.html" target="_blank">
 <img src="<?php echo $wp_url; ?>/lib/images/foot_link3.png" alt="">
-</a>
-<a href="https://www.kankou-yawata.org/" target="_blank">
-<img src="<?php echo $wp_url; ?>/lib/images/foot_link4.png" alt="">
-</a>
-<a href="http://kyotana.be/" target="_blank">
-<img src="<?php echo $wp_url; ?>/lib/images/foot_link5.png" alt="">
-</a>
-<a href="http://www.0774.or.jp/" target="_blank">
-<img src="<?php echo $wp_url; ?>/lib/images/foot_link6.png" alt="">
 </a>
 <a href="https://ujitawara-kyoto.com/" target="_blank">
 <img src="<?php echo $wp_url; ?>/lib/images/foot_link7.png" alt="">
 </a>
-<a href="http://kasagi-rock.kyoto/" target="_blank">
-<img src="<?php echo $wp_url; ?>/lib/images/foot_link8.png" alt="">
-</a>
 <a href="http://wazukanko.com/" target="_blank">
 <img src="<?php echo $wp_url; ?>/lib/images/foot_link9.png" alt="">
-</a>
-<a href="https://www.town.seika.kyoto.jp/kanko/index.html" target="_blank">
-<img src="<?php echo $wp_url; ?>/lib/images/foot_link10.png" alt="">
-</a>
-<a href="http://www.yamashiro-kodo.gr.jp/contents/index.html" target="_blank">
-<img src="<?php echo $wp_url; ?>/lib/images/foot_link11.png" alt="">
 </a>
 </div>
 </div>

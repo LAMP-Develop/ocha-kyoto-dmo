@@ -1,0 +1,15 @@
+.guide-rates {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .inner {
+    width: 48%;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}
