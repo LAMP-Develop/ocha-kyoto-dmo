@@ -1106,6 +1106,16 @@ body {
     box-sizing: border-box;
     padding: 0 5px; }
 
+.ttl3 {
+  font-size: 1.4rem;
+  color: #8AAC25;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  border-top: solid 1px #8AAC25;
+  border-bottom: solid 1px #8AAC25;
+  margin-bottom: 1.3em;
+  line-height: 1; }
+
 .page-ttl {
   position: relative;
   text-align: center;
@@ -1785,6 +1795,79 @@ table.wp-block-advgb-table {
       margin-bottom: 1.5em; }
     .tour-detail .attraction .txt p {
       font-size: 0.875rem; }
+
+.tour-detail .tours-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .tour-detail .tours-img .img,
+  .tour-detail .tours-img .nav-for {
+    width: 49%; }
+  .tour-detail .tours-img .nav-for {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    .tour-detail .tours-img .nav-for .imgs {
+      cursor: pointer;
+      width: 32.5%;
+      overflow: hidden;
+      margin-bottom: 1.5%; }
+
+.tour-detail .tour-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .tour-detail .tour-details .table {
+    width: 55%; }
+    .tour-detail .tour-details .table table {
+      width: 100%;
+      border-collapse: collapse; }
+      .tour-detail .tour-details .table table tr td {
+        border-bottom: solid 1px #F6F6ED;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        font-size: 0.875rem; }
+        .tour-detail .tour-details .table table tr td:first-child {
+          white-space: nowrap;
+          font-weight: bold; }
+  .tour-detail .tour-details .precautions {
+    width: 43%;
+    background-color: #F6F6ED;
+    box-sizing: border-box;
+    padding: 1.5rem; }
+    .tour-detail .tour-details .precautions p {
+      font-size: 0.875rem; }
+
+.tour-detail .taxi-charge-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem; }
+  .tour-detail .taxi-charge-table .inner:first-child {
+    width: 50%; }
+  .tour-detail .taxi-charge-table .inner:nth-child(2) {
+    width: 5%; }
+  .tour-detail .taxi-charge-table .inner:last-child {
+    width: 45%; }
+  .tour-detail .taxi-charge-table .inner h4 {
+    color: #4C5F2D;
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  .tour-detail .taxi-charge-table .inner table {
+    border-collapse: collapse;
+    width: 100%; }
+    .tour-detail .taxi-charge-table .inner table tr td {
+      font-size: 0.875rem;
+      border: solid 1px #8AAC25;
+      box-sizing: border-box;
+      padding: 0.5rem; }
+      .tour-detail .taxi-charge-table .inner table tr td:first-child {
+        white-space: nowrap;
+        background-color: #F6F6ED; }
 
 .to-form {
   display: flex;

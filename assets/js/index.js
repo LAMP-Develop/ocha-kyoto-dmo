@@ -62,4 +62,11 @@ $(document).ready(function() {
       }
     }]
   });
+
+  $('.nav-for .imgs').on('click', function() {
+    let src = $(this).attr('data-src');
+    if (src != null) {
+      $('.tours-img .img img').attr('src', src);
+    }
+  });
 });
