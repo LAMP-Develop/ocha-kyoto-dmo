@@ -12,15 +12,34 @@ get_header(); ?>
 <div class="wrap tow-column">
 
 <aside class="sidebar">
+<div class="inner category category-2">
+<h3 class="crimson">Category</h3>
+<ul>
+<?php
+$args = [
+    'exclude_tree' => [38],
+    'exclude' => [38],
+];
+$c_terms = get_terms('tour_cat', $args);
+foreach ($c_terms as $key => $c_term):
+$c_term_slug = $c_term->slug;
+$c_term_name = $c_term->name;
+?>
+<li>
+<a href="<?php echo $home.'/tour_cat/'.$c_term_slug; ?>"><?php echo $c_term_name; ?></a>
+</li>
+<?php endforeach; ?>
+</ul>
+</div>
 <div class="inner category">
 <h3 class="crimson">12 Villages and Towns</h3>
 <ul>
 <?php
+$args = [
+    'parent' => 38
+];
 $c_terms = get_terms('tour_cat', $args);
 foreach ($c_terms as $key => $c_term):
-if ($c_term->parent !== 38) {
-    continue;
-}
 $c_term_slug = $c_term->slug;
 $c_term_name = $c_term->name;
 ?>
@@ -47,11 +66,15 @@ if (mb_strlen($overview_content) > $limit) {
 } else {
     $content = $overview_content;
 }
-$args = [
-    'parent' => 38
-];
-$terms = get_terms('tour_cat', $args)[0];
-$area_nema = $terms->name;
+
+$terms = get_the_terms($id, 'tour_cat');
+foreach ($terms as $key => $val) {
+    if ($val->parent == 38) {
+        $area_name = $val->name;
+    } elseif ($val->term_id !== 38 && $val->parent == 38) {
+        $category_name = $val->name;
+    }
+}
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
 } else {
@@ -63,6 +86,7 @@ if (has_post_thumbnail()) {
 <a href="<?php echo $p; ?>">
 <figure>
 <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
+<span><?php echo $category_name; ?></span>
 </figure>
 <div class="txt">
 <h3><?php echo $t; ?></h3>
@@ -70,7 +94,7 @@ if (has_post_thumbnail()) {
 <p class="content"><?php echo $content; ?></p>
 </div>
 <div class="area">
-<span><i class="fas fa-map-marker-alt mr-05 color-secondary"></i><?php echo $area_nema; ?></span>
+<span><i class="fas fa-map-marker-alt mr-05 color-secondary"></i><?php echo $area_name; ?></span>
 </div>
 </a>
 </div>

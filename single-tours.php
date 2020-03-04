@@ -69,7 +69,7 @@ $accessmap = get_field('accessmap');
 <div class="tab_content" id="Attractions_inner">
 <div class="tab_content_description">
 <?php
-for ($i=1; $i <= 6; $i++):
+for ($i=1; $i <= 5; $i++):
 if (get_field('location_img_'.$i) == null || get_field('location_img_'.$i) == '') {
     break;
 }
@@ -98,6 +98,11 @@ $location_content = get_field('location_content_'.$i);
 
 <div class="tab_content" id="Images_inner">
 <div class="tab_content_description">
+<?php if (get_field('tour_movie')): ?>
+<div class="youtube">
+<iframe src="<?php the_field('tour_movie'); ?>"></iframe>
+</div>
+<?php endif; ?>
 <?php
 $tours_imgs = [];
 for ($i=1; $i <= 9 ; $i++) {

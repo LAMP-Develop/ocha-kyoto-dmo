@@ -12,10 +12,33 @@ get_header(); ?>
 <div class="wrap tow-column">
 
 <aside class="sidebar">
+<div class="inner category category-2">
+<h3 class="crimson">Category</h3>
+<ul>
+<?php
+$args = [
+    'exclude_tree' => [71],
+    'exclude' => [71],
+];
+$c_terms = get_terms('gallery_cat', $args);
+foreach ($c_terms as $key => $c_term):
+$c_term_slug = $c_term->slug;
+$c_term_name = $c_term->name;
+?>
+<li>
+<a href="<?php echo $home.'/gallery_cat/'.$c_term_slug; ?>"><?php echo $c_term_name; ?></a>
+</li>
+<?php endforeach; ?>
+</ul>
+</div>
+
 <div class="inner category">
 <h3 class="crimson">12 Villages and Towns</h3>
 <ul>
 <?php
+$args = [
+    'parent' => 71
+];
 $c_terms = get_terms('gallery_cat', $args);
 foreach ($c_terms as $key => $c_term):
 $c_term_slug = $c_term->slug;
