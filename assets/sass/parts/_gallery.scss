@@ -4,3 +4,70 @@
     font-size: 0.7rem;
   }
 }
+
+.gallery-guide {
+  h2 {
+    color: $white;
+    background-color: $body;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 1rem;
+  }
+
+  ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 2rem 0 0;
+
+    li {
+      width: 31%;
+      box-sizing: border-box;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      background-color: $white;
+
+      .step {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        padding: 0.8rem;
+        border-bottom: solid 1px $gray;
+
+        span {
+          display: block;
+          color: $primary;
+          font-weight: bold;
+          font-size: 1.8rem;
+          line-height: 1;
+          box-sizing: border-box;
+          margin-right: 1rem;
+          padding-right: 1rem;
+          padding-top: 8px;
+          border-right: solid 2px $primary;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1;
+          margin: 0;
+        }
+      }
+
+      .inner {
+        box-sizing: border-box;
+        padding: 0.8rem;
+
+        p {
+          font-size: 0.875rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
