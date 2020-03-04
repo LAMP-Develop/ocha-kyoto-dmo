@@ -1250,6 +1250,16 @@ body {
         width: 96%;
         padding: 3rem 1rem; } }
 
+.tow-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .tow-column .sidebar {
+    width: 300px; }
+  .tow-column .main {
+    width: calc(98% - 300px); }
+
 header {
   z-index: 999;
   position: relative;
@@ -1379,6 +1389,32 @@ header {
         color: #fff;
         border-radius: 50%;
         text-align: center; }
+
+.sidebar {
+  position: relative; }
+  .sidebar .inner {
+    margin-bottom: 2rem; }
+    .sidebar .inner:last-child {
+      margin-bottom: 0; }
+  .sidebar .category {
+    background-color: #4C5F2D;
+    color: #fff; }
+    .sidebar .category h3 {
+      font-size: 1rem;
+      margin: 0;
+      padding: 1rem; }
+    .sidebar .category li {
+      background-color: #8AAC25;
+      box-sizing: border-box;
+      padding: 0.3rem; }
+      .sidebar .category li a {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0.8rem;
+        background-color: #fff;
+        color: #000;
+        font-size: 0.875rem; }
 
 .mv {
   box-sizing: border-box;
@@ -1723,6 +1759,60 @@ table.wp-block-advgb-table {
   .guide-rates p {
     font-size: 0.875rem; }
 
+.tours-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .tours-lists .card {
+    width: 48%;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem; }
+    .tours-lists .card figure {
+      width: 100%;
+      margin: 0; }
+      .tours-lists .card figure img {
+        margin: 0;
+        width: 100%;
+        height: auto; }
+    .tours-lists .card .txt {
+      box-sizing: border-box;
+      padding: 1.5rem 1rem; }
+      .tours-lists .card .txt h3 {
+        font-size: 1.1rem;
+        margin: 0; }
+      .tours-lists .card .txt .price {
+        font-size: 0.875rem;
+        margin: 0; }
+      .tours-lists .card .txt .content {
+        font-size: 0.75rem;
+        color: rgba(0, 0, 0, 0.5);
+        margin: 0.8rem 0 0; }
+    .tours-lists .card .area {
+      border-top: solid 1px #F6F6ED;
+      box-sizing: border-box;
+      padding: 0.8rem 1rem;
+      font-size: 0.75rem; }
+
+.tour-detail .meta-small {
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 0.3rem; }
+
+.tour-detail .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .tour-detail .meta .metas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; }
+    .tour-detail .meta .metas p {
+      font-size: 0.875rem;
+      margin-right: 1rem; }
+
 .tour-detail .tabs {
   margin-top: 3rem; }
 
@@ -1889,4 +1979,74 @@ table.wp-block-advgb-table {
     .to-form .txt h3 {
       font-size: 2rem;
       margin: 0; }
+
+.charms-list {
+  position: relative; }
+  .charms-list .charms-post {
+    margin-bottom: 3rem; }
+    .charms-list .charms-post h3 {
+      background-color: #F6F6ED;
+      font-size: 1.2rem;
+      line-height: 1;
+      box-sizing: border-box;
+      padding: 1rem;
+      margin-bottom: 1.5em; }
+    .charms-list .charms-post .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 2rem; }
+      .charms-list .charms-post .inner .img {
+        width: 40%;
+        overflow: hidden; }
+        .charms-list .charms-post .inner .img img {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          border-radius: 0.5rem; }
+      .charms-list .charms-post .inner .txt {
+        width: 58%; }
+        .charms-list .charms-post .inner .txt h4 {
+          font-size: 1.1rem;
+          margin-bottom: 1.5rem; }
+        .charms-list .charms-post .inner .txt p {
+          font-size: 0.875rem; }
+    .charms-list .charms-post .gmap iframe {
+      border: 0;
+      width: 100%;
+      height: 300px; }
+    .charms-list .charms-post hr {
+      margin: 1.5rem 0;
+      width: 100%;
+      background-color: #273200; }
+
+.article-main .article-ttl {
+  font-size: 1.4rem; }
+
+.article-main .meta {
+  margin: 0 0 2rem; }
+
+.article-main .post-main {
+  font-size: 0.875rem; }
+  .article-main .post-main h2 {
+    font-size: 1.4rem;
+    margin: 2em 0 1em; }
+  .article-main .post-main h3 {
+    font-size: 1.2rem;
+    margin: 2em 0 1em; }
+  .article-main .post-main h4 {
+    font-size: 1rem;
+    margin: 2em 0 1em; }
+  .article-main .post-main p {
+    margin: 0 0 1em; }
+  .article-main .post-main img {
+    margin: 0 0 1em; }
+  .article-main .post-main ol,
+  .article-main .post-main ul {
+    box-sizing: border-box;
+    padding-left: 1.5em; }
+    .article-main .post-main ol li,
+    .article-main .post-main ul li {
+      list-style: disc; }
 

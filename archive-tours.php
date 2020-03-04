@@ -5,7 +5,7 @@ get_header(); ?>
 
 <div class="mv-sub">
 <img src="<?php echo $wp_url; ?>/lib/images/mv_tours.png" alt="">
-<h2 class="txt-c color-white">Blog</h2>
+<h2 class="txt-c color-white">List of tours</h2>
 </div>
 
 <section class="sec">
@@ -13,18 +13,19 @@ get_header(); ?>
 
 <aside class="sidebar">
 <div class="inner category">
-<h3 class="crimson">Blog category</h3>
+<h3 class="crimson">12 Villages and Towns</h3>
 <ul>
 <?php
-$args = [
-    'parent' => 1,
-    'hide_empty' => 0,
-];
-$categories = get_categories($args);
-foreach ($categories as $key => $cat):
+$c_terms = get_terms('tour_cat', $args);
+foreach ($c_terms as $key => $c_term):
+if ($c_term->parent !== 38) {
+    continue;
+}
+$c_term_slug = $c_term->slug;
+$c_term_name = $c_term->name;
 ?>
 <li>
-<a href="<?php echo $home.'/blog/'.$cat->slug; ?>"><?php echo $cat->cat_name; ?></a>
+<a href="#<?php echo $c_term_slug; ?>"><?php echo $c_term_name; ?></a>
 </li>
 <?php endforeach; ?>
 </ul>
@@ -65,6 +66,11 @@ if (has_post_thumbnail()) {
 </figure>
 <div class="txt">
 <h3><?php echo $t; ?></h3>
+<p class="price"><?php echo $price; ?></p>
+<p class="content"><?php echo $content; ?></p>
+</div>
+<div class="area">
+<span><i class="fas fa-map-marker-alt mr-05 color-secondary"></i><?php echo $area_nema; ?></span>
 </div>
 </a>
 </div>

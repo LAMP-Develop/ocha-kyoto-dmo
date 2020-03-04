@@ -33,11 +33,16 @@ $accessmap = get_field('accessmap');
 
 <section class="sec tour-detail">
 <div class="wrap">
-<p>Tours name</p>
+<p class="meta-small">Tours name</p>
 <h2><?php echo $t; ?></h2>
 <div class="meta">
-<p><span>Area</span><?php echo $area_nema; ?></p>
-<p><span>Group size</span><?php echo $group_size; ?></p>
+<div class="metas">
+<p><span class="meta-small">Area</span><?php echo $area_nema; ?></p>
+<p><span class="meta-small">Group size</span><?php echo $group_size; ?></p>
+</div>
+<div class="btn-3">
+<a href="">Apply for this tour</a>
+</div>
 </div>
 
 <div class="tabs">

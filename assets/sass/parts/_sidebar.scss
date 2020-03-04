@@ -1,0 +1,38 @@
+.sidebar {
+  position: relative;
+
+  .inner {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .category {
+    background-color: $third;
+    color: $white;
+
+    h3 {
+      font-size: 1rem;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    li {
+      background-color: $primary;
+      box-sizing: border-box;
+      padding: 0.3rem;
+
+      a {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0.8rem;
+        background-color: $white;
+        color: $dark;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

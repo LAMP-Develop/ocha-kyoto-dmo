@@ -5,7 +5,7 @@ get_header(); ?>
 
 <div class="mv-sub">
 <img src="<?php echo $wp_url; ?>/lib/images/mv_tours.png" alt="">
-<h2 class="txt-c color-white">Blog</h2>
+<h2 class="txt-c color-white">Event</h2>
 </div>
 
 <section class="sec">
@@ -13,18 +13,16 @@ get_header(); ?>
 
 <aside class="sidebar">
 <div class="inner category">
-<h3 class="crimson">Blog category</h3>
+<h3 class="crimson">12 Villages and Towns</h3>
 <ul>
 <?php
-$args = [
-    'parent' => 1,
-    'hide_empty' => 0,
-];
-$categories = get_categories($args);
-foreach ($categories as $key => $cat):
+$c_terms = get_terms('events_cat', $args);
+foreach ($c_terms as $key => $c_term):
+$c_term_slug = $c_term->slug;
+$c_term_name = $c_term->name;
 ?>
 <li>
-<a href="<?php echo $home.'/blog/'.$cat->slug; ?>"><?php echo $cat->cat_name; ?></a>
+<a href="<?php echo $home.'/model_course_cat/'.$c_term_slug; ?>"><?php echo $c_term_name; ?></a>
 </li>
 <?php endforeach; ?>
 </ul>
@@ -38,18 +36,9 @@ if (have_posts()): while (have_posts()): the_post();
 $t = get_the_title();
 $id = get_the_ID();
 $p = get_the_permalink();
-$price = get_field('price', $id);
-$overview_content = get_field('overview_content', $id);
-$limit = 100;
-if (mb_strlen($overview_content) > $limit) {
-    $content = mb_substr($overview_content, 0, $limit).'...';
-} else {
-    $content = $overview_content;
-}
 $args = [
-    'parent' => 38
 ];
-$terms = get_terms('tour_cat', $args)[0];
+$terms = get_terms('events_cat', $args)[0];
 $area_nema = $terms->name;
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
@@ -65,6 +54,9 @@ if (has_post_thumbnail()) {
 </figure>
 <div class="txt">
 <h3><?php echo $t; ?></h3>
+</div>
+<div class="area">
+<span><i class="fas fa-map-marker-alt mr-05 color-secondary"></i><?php echo $area_nema; ?></span>
 </div>
 </a>
 </div>
