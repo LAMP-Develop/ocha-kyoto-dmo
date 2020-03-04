@@ -4,8 +4,10 @@ $wp_url = get_template_directory_uri();
 get_header(); ?>
 <div class="mv">
 <img src="<?php echo $wp_url; ?>/lib/images/mv01.png" alt="">
-<img src="<?php echo $wp_url; ?>/lib/images/mv01.png" alt="">
-<img src="<?php echo $wp_url; ?>/lib/images/mv01.png" alt="">
+<img src="<?php echo $wp_url; ?>/lib/images/mv02.png" alt="">
+<img src="<?php echo $wp_url; ?>/lib/images/mv03.png" alt="">
+<img src="<?php echo $wp_url; ?>/lib/images/mv04.png" alt="">
+<img src="<?php echo $wp_url; ?>/lib/images/mv05.png" alt="">
 </div>
 
 <div class="lead sec">
