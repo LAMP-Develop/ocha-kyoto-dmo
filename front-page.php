@@ -12,7 +12,7 @@ get_header(); ?>
 <div class="wrap">
 <h2 class="ttl2 txt-c"><span class="uppercase crimson">Hidden Kyoto Countryside Tour.</span></h2>
 <p>The Yamashiro area in southern Kyoto prefecture is the historical center of Japanese green tea production in Kyoto. It covers an area that includes 12 cities, towns and villages. It has long flourished as a hub of people, goods and culture, with many significant temples and shrines being constructed here. In addition to the Unesco World Heritage sites of Byodo-in Temple and Ujigami Shrine in Uji, exquisite temples and shrines designated as National Treasures and important cultural properties are dotted around the area.
-<br>But it is the humble tea plant that unites the area and continues to attract visitors from all over the world, eager to unearth its green tea secrets. From its picturesque tea fields, historic buildings and serene temples and shrines, to its contemporary architecture and restaurants, the Yamashiro area reveals an history and culture deeply intertwined with its 800-year tea heritage. Compared with the ever-popular Kyoto and Nara, Yamashiro benefits from being off the main tourist trail, affording the adventurous traveler an authentic Japanese experience without the crowds. Immerse yourself in this ancient land and your next cup of green tea will never have tasted better.</p>
+<br>But it is the humble tea plant that unites the area and continues to attract visitors from all over the world, eager to unearth its green tea secrets. From its picturesque tea fields, historic buildings and serene temples and shrines, to its contemporary architecture and restaurants, the Yamashiro area reveals a history and culture deeply intertwined with its 800-year tea heritage. Compared with the ever-popular Kyoto and Nara, Yamashiro benefits from being off the main tourist trail, affording the adventurous traveler an authentic Japanese experience without the crowds. Immerse yourself in this ancient land and your next cup of green tea will never have tasted better.</p>
 <p class="txt-c">
 <img src="<?php echo $wp_url; ?>/lib/images/top_map.png" alt="">
 </p>
@@ -140,7 +140,7 @@ if (has_post_thumbnail()) {
 <div class="inner">
 <a href="<?php echo $home; ?>/charms#kasagi-town">
 <h3>KASAGI TOWN</h3>
-<p>Surrounded by unspoilt nature, Kasagi Town boasts the serene mountain top Kasagi-dera Temple, whose enormous buddha effigies carved into the rockface are a sight to behold.</p>
+<p>Surrounded by unspoilt nature, Kasagi Town boasts the serene mountain top Kasagi-dera Temple, whose enormous buddha effigies carved into the Rock face is a sight to behold.</p>
 </a>
 </div>
 <div class="inner">

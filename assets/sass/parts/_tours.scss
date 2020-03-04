@@ -51,12 +51,12 @@
   }
 }
 
-.tour-detail {
-  .meta-small {
-    color: rgba($dark, 0.5);
-    margin-right: 0.3rem;
-  }
+.meta-small {
+  color: rgba($dark, 0.5);
+  margin-right: 0.3rem;
+}
 
+.tour-detail {
   .meta {
     display: flex;
     justify-content: space-between;

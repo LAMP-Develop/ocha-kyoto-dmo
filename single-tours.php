@@ -41,7 +41,7 @@ $accessmap = get_field('accessmap');
 <p><span class="meta-small">Group size</span><?php echo $group_size; ?></p>
 </div>
 <div class="btn-3">
-<a href="">Apply for this tour</a>
+<a href="<?php echo $home; ?>/reservation-form?tour_name=<?php echo $t; ?>&area=<?php echo $area_nema; ?>">Apply for this tour</a>
 </div>
 </div>
 
@@ -252,7 +252,7 @@ foreach ($taxi_price as $key => $taxi): ?>
 <div>
 <h3 class="crimson">Booking Inquiry From</h3>
 <div class="btn-3">
-<a href="">Apply for this tour</a>
+<a href="<?php echo $home; ?>/reservation-form?tour_name=<?php echo $t; ?>&area=<?php echo $area_nema; ?>">Apply for this tour</a>
 </div>
 </div>
 </div>

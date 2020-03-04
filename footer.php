@@ -30,7 +30,7 @@ $wp_url = get_template_directory_uri(); ?>
 <a href="<?php echo $home; ?>">
 <img src="<?php echo $wp_url; ?>/lib/images/logo.png" alt="<?php bloginfo('name'); ?>">
 </a>
-<p class="mt-1 mb-1">Kyoto Yamashiro Regional Promotion Agency (also known as Kyoto Tea Country)
+<p class="mt-1 mb-1">Kyoto Yamashiro Regional Promotion Agency
 <br>2 Fl. Keihan Uji Buildfing, 7-8 Uji Ogata, Uji City, Kyoto 611- 0021 Japan</p>
 <p>TEL：0774-25-3239　E-mail：dmo@ochanokyoto.jp</p>
 </div>
