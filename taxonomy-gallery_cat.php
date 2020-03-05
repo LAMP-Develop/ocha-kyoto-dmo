@@ -39,9 +39,6 @@ $p = get_the_permalink();
 $args = [
 ];
 $terms = (array)get_the_terms(get_the_ID(),'gallery_cat');
-foreach ($terms as $key => $val) {
-    $area_name = $val->name;
-}
 $pic = get_field('gallery_pic', $id);
 $size_w = get_field('pic_w', $id);
 $size_h = get_field('pic_h', $id);
@@ -57,7 +54,9 @@ $size_h = get_field('pic_h', $id);
 <span class="size"><?php echo $size_w; ?>×<?php echo $size_h; ?></span>
 </div>
 <div class="area">
-<span><?php echo $area_name; ?></span>
+<span><?php foreach ($terms as $key => $val) {
+    echo $val->name.'/';
+} ?></span>
 </div>
 </a>
 </div>
