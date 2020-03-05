@@ -54,7 +54,7 @@ $size_h = get_field('pic_h', $id);
 </div>
 <div class="area">
 <span><?php foreach ($terms as $key => $val) {
-    echo $val->name.'/';
+    echo $val->name.' / ';
 } ?></span>
 </div>
 </div>
