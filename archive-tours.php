@@ -68,10 +68,11 @@ if (mb_strlen($overview_content) > $limit) {
 }
 
 $terms = get_the_terms($id, 'tour_cat');
+$category_name = null;
 foreach ($terms as $key => $val) {
     if ($val->parent == 38) {
         $area_name = $val->name;
-    } elseif ($val->term_id !== 38 && $val->parent == 38) {
+    } elseif ($val->term_id !== 38 && $val->parent !== 38) {
         $category_name = $val->name;
     }
 }
@@ -86,7 +87,9 @@ if (has_post_thumbnail()) {
 <a href="<?php echo $p; ?>">
 <figure>
 <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
-<span><?php echo $category_name; ?></span>
+<?php if ($category_name !== null): ?>
+<span class="category-name"><?php echo $category_name; ?></span>
+<?php endif; ?>
 </figure>
 <div class="txt">
 <h3><?php echo $t; ?></h3>
