@@ -24,7 +24,7 @@ get_header(); ?>
 <section id="tours" class="sec">
 <div class="wrap">
 <h2 class="ttl2 txt-c">
-<span class="uppercase crimson">tours</span>
+<span class="uppercase crimson">Hidden Kyoto Tour<br>-Kyoto  Countryside Tour-</span>
 <img src="<?php echo $wp_url; ?>/lib/images/icon_tours.png" alt="tours">
 </h2>
 </div>
@@ -117,7 +117,7 @@ if (has_post_thumbnail()) {
 </div>
 <div class="inner">
 <a href="<?php echo $home; ?>/charms#kidugawa-city">
-<h3>KIZUGAWA CITY</h3>
+<h3>KIDUGAWA CITY</h3>
 <p>Kizugawa City sits at the southernmost tip of Kyoto Prefecture and is second only to Kyoto City for its sheer number of national treasures and important cultural assets.</p>
 </a>
 </div>
@@ -215,7 +215,7 @@ if (has_post_thumbnail()) {
 <section class="sec">
 <div class="wrap">
 <h2 class="ttl2 txt-c">
-<span class="uppercase crimson">EVENTS</span>
+<span class="uppercase crimson">EVENT</span>
 <img src="<?php echo $wp_url; ?>/lib/images/icon_events.png" alt="tours">
 </h2>
 <div class="tours-slider-wrap">

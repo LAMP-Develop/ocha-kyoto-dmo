@@ -30,7 +30,7 @@ $wp_url = get_template_directory_uri(); ?>
 <li>
 <a class="drawer-menu-item" href="<?php echo $home; ?>/events/">
 <img src="<?php echo $wp_url; ?>/lib/images/icon_events.png" alt="">
-<span>Events</span>
+<span>Event</span>
 </a>
 </li>
 <li>
