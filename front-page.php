@@ -189,7 +189,7 @@ $posts = get_posts($args);
 foreach ($posts as $post): setup_postdata($post);
 $t = get_the_title();
 $p = get_the_permalink();
-$terms = get_the_terms(get_the_ID(),'model_course_cat');
+$terms = (array)get_the_terms(get_the_ID(),'model_course_cat');
 foreach ($terms as $key => $val) {
     $area_name = $val->name;
 }
@@ -238,7 +238,7 @@ $posts = get_posts($args);
 foreach ($posts as $post): setup_postdata($post);
 $t = get_the_title();
 $p = get_the_permalink();
-$terms = get_the_terms(get_the_ID(),'events_cat');
+$terms = (array)get_the_terms(get_the_ID(),'events_cat');
 foreach ($terms as $key => $val) {
     $area_name = $val->name;
 }
