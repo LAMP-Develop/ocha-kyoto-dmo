@@ -51,6 +51,14 @@ $wp_url = get_template_directory_uri(); ?>
 </div>
 </footer>
 <!-- フッター終了 -->
+
+<?php if (is_post_type_archive('gallery') || is_tax('gallery_cat')): ?>
+<a class="download-btn" href="<?php echo $home; ?>/download-form/">
+<span class="counts">0</span>
+<span class="ttl crimson">Download</span>
+</a>
+<?php endif; ?>
+
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -120,7 +120,7 @@ if (has_post_thumbnail()) {
 </div>
 <div class="inner">
 <a href="<?php echo $home; ?>/charms#kidugawa-city">
-<h3>KIDUGAWA CITY</h3>
+<h3>KIZUGAWA CITY</h3>
 <p>Kizugawa City sits at the southernmost tip of Kyoto Prefecture and is second only to Kyoto City for its sheer number of national treasures and important cultural assets.</p>
 </a>
 </div>
@@ -213,7 +213,7 @@ if (has_post_thumbnail()) {
 </div>
 </div>
 <div class="btn txt-c mt-2">
-<a class="crimson" href="<?php echo $home; ?>/events/">More</a>
+<a class="crimson" href="<?php echo $home; ?>/model_course/">More</a>
 </div>
 </div>
 </section>
@@ -262,7 +262,7 @@ if (has_post_thumbnail()) {
 </div>
 </div>
 <div class="btn txt-c mt-2">
-<a class="crimson" href="<?php echo $home; ?>/model_course/">More</a>
+<a class="crimson" href="<?php echo $home; ?>/events/">More</a>
 </div>
 </div>
 </section>

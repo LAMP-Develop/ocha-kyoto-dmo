@@ -69,4 +69,52 @@ $(document).ready(function() {
       $('.tours-img .img img').attr('src', src);
     }
   });
+
+
+  // gallery download
+  if (('sessionStorage' in window) && (window.sessionStorage !== null)) {
+    console.log('ok');
+  } else {
+    console.log('no');
+  }
+  if (sessionStorage.getItem('count') == null) {
+    $('.download-btn .counts').text('0');
+  } else {
+    $('.download-btn .counts').text(sessionStorage.getItem('count'));
+  }
+  $('.gallery-lists .card').on('click', function() {
+    let url = $(this).attr('data-src');
+    let count = $('.download-btn .counts');
+    let plus = parseInt(count.text()) + 1;
+    count.text(plus);
+    sessionStorage.setItem('count', plus);
+
+    if (sessionStorage.getItem('imgs') == null) {
+      sessionStorage.setItem('imgs', url);
+    } else {
+      let temp = sessionStorage.getItem('imgs')+','+url;
+      sessionStorage.setItem('imgs', temp);
+    }
+  });
+  $('.select-imgs .img').on('click', function() {
+    $(this).remove();
+    let url = $(this).attr('data-src');
+    let idx = imgs.indexOf(url);
+    if(idx >= 0){
+     imgs.splice(idx, 1);
+    }
+    if (imgs.length != 0) {
+      let arr = imgs.join(',');
+      sessionStorage.setItem('imgs', arr);
+    } else {
+      sessionStorage.removeItem('imgs');
+    }
+    if (sessionStorage.getItem('count') != null) {
+      let num = sessionStorage.getItem('count');
+      num--;
+      sessionStorage.setItem('count', num);
+    }
+  });
+  // sessionStorage clear
+  // sessionStorage.clear();
 });

@@ -12,9 +12,18 @@ get_header(); ?>
 </div>
 
 <div class="download-pic">
-
+<h3 class="txt-c">Download picture</h3>
+<div class="download-pics"></div>
 </div>
 
 </div>
 </section>
+
+<script>
+let imgs = new Array();
+imgs = sessionStorage.getItem('imgs').split(",");
+imgs.forEach(function(val) {
+  jQuery('.download-pics').append('<a href="'+val+'" download><img src="'+val+'"></a>');
+});
+</script>
 <?php get_footer();

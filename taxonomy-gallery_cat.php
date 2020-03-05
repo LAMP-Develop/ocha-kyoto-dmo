@@ -66,13 +66,13 @@ $t = get_the_title();
 $p = get_the_permalink();
 $args = [
 ];
-$terms = (array)get_the_terms(get_the_ID(),'gallery_cat');
+$terms = (array)get_the_terms(get_the_ID(), 'gallery_cat');
 $pic = get_field('gallery_pic', $id);
 $size_w = get_field('pic_w', $id);
 $size_h = get_field('pic_h', $id);
 ?>
 
-<div class="card">
+<div class="card" data-src="<?php echo $pic; ?>">
 <figure>
 <img src="<?php echo $pic; ?>" alt="<?php echo $t; ?>">
 </figure>

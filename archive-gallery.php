@@ -72,7 +72,7 @@ $size_w = get_field('pic_w', $id);
 $size_h = get_field('pic_h', $id);
 ?>
 
-<div class="card">
+<div class="card" data-src="<?php echo $pic; ?>">
 <figure>
 <img src="<?php echo $pic; ?>" alt="<?php echo $t; ?>">
 </figure>
