@@ -8,6 +8,7 @@ get_header('low'); ?>
 <?php
 if (have_posts()):
 while (have_posts()): the_post();
+$t = get_the_title();
 ?>
 <article class="sec article-main">
 <div class="wrap">
