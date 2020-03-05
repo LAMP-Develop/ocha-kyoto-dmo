@@ -36,7 +36,7 @@ if (have_posts()): while (have_posts()): the_post();
 $t = get_the_title();
 $id = get_the_ID();
 $p = get_the_permalink();
-$terms = get_the_terms(get_the_ID(),'model_course_cat');
+$terms = (array)get_the_terms(get_the_ID(),'model_course_cat');
 foreach ($terms as $key => $val) {
     $area_name = $val->name;
 }

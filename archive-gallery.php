@@ -61,7 +61,7 @@ $t = get_the_title();
 $p = get_the_permalink();
 $args = [
 ];
-$terms = get_the_terms(get_the_ID(),'gallery_cat');
+$terms = (array)get_the_terms(get_the_ID(),'gallery_cat');
 foreach ($terms as $key => $val) {
     $area_name = $val->name;
 }

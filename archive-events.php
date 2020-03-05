@@ -38,7 +38,7 @@ $id = get_the_ID();
 $p = get_the_permalink();
 $args = [
 ];
-$terms = get_the_terms(get_the_ID(),'events_cat');
+$terms = (array)get_the_terms(get_the_ID(),'events_cat');
 foreach ($terms as $key => $val) {
     $area_name = $val->name;
 }
