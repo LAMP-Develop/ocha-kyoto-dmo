@@ -23,6 +23,9 @@ $p = get_the_permalink();
 </a>
 <?php endwhile; endif; ?>
 </div>
+<?php if (function_exists('wp_pagenavi')) {
+    wp_pagenavi();
+} ?>
 </div>
 </section>
 <?php get_footer();

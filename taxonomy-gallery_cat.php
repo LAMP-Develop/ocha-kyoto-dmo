@@ -61,6 +61,9 @@ $size_h = get_field('pic_h', $id);
 
 <?php endwhile; endif; ?>
 </div>
+<?php if (function_exists('wp_pagenavi')) {
+    wp_pagenavi();
+} ?>
 </div>
 
 </div>

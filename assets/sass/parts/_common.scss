@@ -379,7 +379,6 @@ body {
     display: block;
     font-size: $font-size-base*1.5;
     margin-bottom: $font-size-base;
-
     @include media-md() {
       font-size: $font-size-base*1.2;
     }
@@ -645,5 +644,25 @@ body {
     @include media-lg() {
       width: 100%;
     }
+  }
+}
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+
+  a,
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0 5px;
+    padding: 8px 10px;
+    background-color: $gray;
+    line-height: 1;
+    font-family: 'Crimson Text', serif;
   }
 }

@@ -75,3 +75,10 @@
     }
   }
 }
+
+.download-pic {
+  border-top: solid 1px $gray;
+  max-width: $breakpoint-md;
+  margin: 2rem auto 0;
+  padding-top: 2rem;
+}

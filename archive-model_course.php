@@ -63,6 +63,9 @@ if (has_post_thumbnail()) {
 
 <?php endwhile; endif; ?>
 </div>
+<?php if (function_exists('wp_pagenavi')) {
+    wp_pagenavi();
+} ?>
 </div>
 
 </div>
