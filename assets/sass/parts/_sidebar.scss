@@ -19,28 +19,41 @@
       padding: 1rem;
     }
 
-    li {
-      background-color: $primary;
-      box-sizing: border-box;
-      padding: 0.3rem;
+    ul {
+      @include media-lg() {
+        display: flex;
+        justify-content: flex-start;
+      }
 
-      a {
-        display: block;
+      li {
+        background-color: $primary;
         box-sizing: border-box;
-        margin: 0;
-        padding: 0.8rem;
-        background-color: $white;
-        color: $dark;
-        font-size: 0.875rem;
+        padding: 0.3rem;
+        @include media-lg() {
+          margin: 0;
+        }
+
+        a {
+          display: block;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0.8rem;
+          background-color: $white;
+          color: $dark;
+          font-size: 0.875rem;
+          @include media-lg() {
+            padding: 0.5rem;
+          }
+        }
       }
     }
   }
 
   .category-2 {
-    background-color: #E0AE00;
+    background-color: #E0AE00 !important;
 
     li {
-      background-color: #EEB902;
+      background-color: #EEB902 !important;
     }
   }
 }
