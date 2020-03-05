@@ -36,10 +36,10 @@ if (have_posts()): while (have_posts()): the_post();
 $t = get_the_title();
 $id = get_the_ID();
 $p = get_the_permalink();
-$args = [
-];
-$terms = get_terms('model_course_cat', $args)[0];
-$area_nema = $terms->name;
+$terms = get_the_terms(get_the_ID(),'model_course_cat');
+foreach ($terms as $key => $val) {
+    $area_name = $val->name;
+}
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
 } else {
@@ -56,7 +56,7 @@ if (has_post_thumbnail()) {
 <h3><?php echo $t; ?></h3>
 </div>
 <div class="area">
-<span><i class="fas fa-map-marker-alt mr-05 color-secondary"></i><?php echo $area_nema; ?></span>
+<span><i class="fas fa-map-marker-alt mr-05 color-secondary"></i><?php echo $area_name; ?></span>
 </div>
 </a>
 </div>

@@ -42,10 +42,13 @@ $posts = get_posts($args);
 foreach ($posts as $post): setup_postdata($post);
 $t = get_the_title();
 $p = get_the_permalink();
-$args = [
-    'parent' => 38
-];
-$terms = get_terms('tour_cat', $args)[0];
+$terms = get_the_terms(get_the_ID(),'tour_cat');
+foreach ($terms as $key => $val) {
+    if ($val->parent === 38) {
+        $area_name = $val->name;
+        break;
+    }
+}
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
 } else {
@@ -58,7 +61,7 @@ if (has_post_thumbnail()) {
 <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
 </div>
 <h3><?php echo $t; ?></h3>
-<p><?php echo $terms->name; ?></p>
+<p><?php echo $area_name; ?></p>
 </a>
 </div>
 <?php endforeach; wp_reset_postdata(); ?>
@@ -186,7 +189,10 @@ $posts = get_posts($args);
 foreach ($posts as $post): setup_postdata($post);
 $t = get_the_title();
 $p = get_the_permalink();
-$terms = get_terms('model_course_cat', $args)[0];
+$terms = get_the_terms(get_the_ID(),'model_course_cat');
+foreach ($terms as $key => $val) {
+    $area_name = $val->name;
+}
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
 } else {
@@ -196,7 +202,7 @@ if (has_post_thumbnail()) {
 <article class="posts">
 <a href="<?php echo $p; ?>">
 <figure>
-<span class="cat"><?php echo $terms->name; ?></span>
+<span class="cat"><?php echo $area_name; ?></span>
 <img src="<?php echo $i; ?>" alt="">
 </figure>
 <h3><?php echo $t; ?></h3>
@@ -232,7 +238,10 @@ $posts = get_posts($args);
 foreach ($posts as $post): setup_postdata($post);
 $t = get_the_title();
 $p = get_the_permalink();
-$terms = get_terms('model_course_cat', $args)[0];
+$terms = get_the_terms(get_the_ID(),'events_cat');
+foreach ($terms as $key => $val) {
+    $area_name = $val->name;
+}
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
 } else {
@@ -242,7 +251,7 @@ if (has_post_thumbnail()) {
 <article class="posts">
 <a href="<?php echo $p; ?>">
 <figure>
-<span class="cat"><?php echo $terms->name; ?></span>
+<span class="cat"><?php echo $area_name; ?></span>
 <img src="<?php echo $i; ?>" alt="">
 </figure>
 <h3><?php echo $t; ?></h3>
