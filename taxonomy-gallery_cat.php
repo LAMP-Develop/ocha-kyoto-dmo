@@ -45,7 +45,6 @@ $size_h = get_field('pic_h', $id);
 ?>
 
 <div class="card">
-<a href="<?php echo $p; ?>">
 <figure>
 <img src="<?php echo $pic; ?>" alt="<?php echo $t; ?>">
 </figure>
@@ -58,7 +57,6 @@ $size_h = get_field('pic_h', $id);
     echo $val->name.'/';
 } ?></span>
 </div>
-</a>
 </div>
 
 <?php endwhile; endif; ?>
