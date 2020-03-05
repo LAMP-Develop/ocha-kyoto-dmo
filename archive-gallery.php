@@ -53,15 +53,20 @@ $c_term_name = $c_term->name;
 </aside>
 
 <div class="main">
+<?php if (have_posts()):
+$current_pgae = get_query_var('paged');
+$current_pgae = $current_pgae == 0 ? '1' : $current_pgae;
+?>
+<p class="mb-1"><small><?php echo $wp_query->found_posts; ?> results to appear in page <?php echo $current_pgae; ?></small></p>
 <div class="tours-lists gallery-lists">
 <?php
-if (have_posts()): while (have_posts()): the_post();
+while (have_posts()): the_post();
 $id = get_the_ID();
 $t = get_the_title();
 $p = get_the_permalink();
 $args = [
 ];
-$terms = (array)get_the_terms(get_the_ID(),'gallery_cat');
+$terms = (array)get_the_terms(get_the_ID(), 'gallery_cat');
 $pic = get_field('gallery_pic', $id);
 $size_w = get_field('pic_w', $id);
 $size_h = get_field('pic_h', $id);
@@ -82,8 +87,9 @@ $size_h = get_field('pic_h', $id);
 </div>
 </div>
 
-<?php endwhile; endif; ?>
+<?php endwhile; ?>
 </div>
+<?php endif; ?>
 <?php if (function_exists('wp_pagenavi')) {
     wp_pagenavi();
 } ?>
