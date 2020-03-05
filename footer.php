@@ -40,6 +40,11 @@ $wp_url = get_template_directory_uri(); ?>
 <a href="https://www.instagram.com/ochanokyotodmo/" target="_blank"><i class="fab fa-instagram"></i></a>
 </div>
 <p class="txt-r">©2020 お茶の京都 All Rights Reserved.</p>
+<p class="txt-r">
+<a class="mr-05" href="<?php echo $home; ?>/privacy-policy/"><small>Privacypolicy</small></a>
+<a class="mr-05" href="<?php echo $home; ?>/website-terms-of-use/"><small>Website terms</small></a>
+<a href="<?php echo $home; ?>/photo-library-terms-of-use/"><small>Photo library terms</small></a>
+</p>
 </div>
 </div>
 </div>
