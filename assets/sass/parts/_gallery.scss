@@ -29,6 +29,10 @@
       overflow: hidden;
       border-radius: 0.5rem;
       background-color: $white;
+      @include media-md() {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
 
       .step {
         display: flex;

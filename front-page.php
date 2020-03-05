@@ -310,7 +310,7 @@ if ($pics === null || $pics === '') {
 <a class="crimson" href="https://www.instagram.com/ochanokyotodmo/" target="_blank"><i class="fab fa-instagram mr-05"></i>Instagram</a>
 </div>
 <div class="mt-3 txt-c">
-<a href="<?php echo $hoem; ?>/gallery/">
+<a href="<?php echo $home; ?>/gallery/">
 <img src="<?php echo $wp_url; ?>/lib/images/bnr_gallery.png" alt="">
 </a>
 </div>
