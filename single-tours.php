@@ -145,7 +145,7 @@ for ($i=1; $i <= 9 ; $i++) {
 <?php endif; ?>
 <?php if (get_field('date')): ?>
 <tr>
-<td>Date</td>
+<td>Tour Operation Day</td>
 <td><?php the_field('date'); ?></td>
 </tr>
 <?php endif; ?>
@@ -163,7 +163,7 @@ for ($i=1; $i <= 9 ; $i++) {
 <?php endif; ?>
 <?php if (get_field('time')): ?>
 <tr>
-<td>Time</td>
+<td>Duration</td>
 <td><?php the_field('time'); ?></td>
 </tr>
 <?php endif; ?>
@@ -171,6 +171,18 @@ for ($i=1; $i <= 9 ; $i++) {
 <tr>
 <td>Meeting Point</td>
 <td><?php the_field('meeting_point'); ?></td>
+</tr>
+<?php endif; ?>
+<?php if (get_field('meals')): ?>
+<tr>
+<td>Meals availability</td>
+<td><?php the_field('meals'); ?></td>
+</tr>
+<?php endif; ?>
+<?php if (get_field('meals')): ?>
+<tr>
+<td>Tour Conductor availability</td>
+<td><?php the_field('tour_conductor'); ?></td>
 </tr>
 <?php endif; ?>
 </table>

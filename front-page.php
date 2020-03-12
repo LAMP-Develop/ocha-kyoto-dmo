@@ -295,7 +295,7 @@ if (has_post_thumbnail()) {
 <section class="sec">
 <div class="wrap">
 <h2 class="ttl2">
-<span class="crimson">Photo Gallery</span>
+<span class="crimson">Photolibrary</span>
 </h2>
 </div>
 <div class="gallery-pics">
