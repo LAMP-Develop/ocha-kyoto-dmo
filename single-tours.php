@@ -179,10 +179,22 @@ for ($i=1; $i <= 9 ; $i++) {
 <td><?php the_field('meals'); ?></td>
 </tr>
 <?php endif; ?>
-<?php if (get_field('meals')): ?>
+<?php if (get_field('tour_conductor')): ?>
 <tr>
 <td>Tour Conductor availability</td>
 <td><?php the_field('tour_conductor'); ?></td>
+</tr>
+<?php endif; ?>
+<?php if (get_field('tour_includes')): ?>
+<tr>
+<td>Tour includes</td>
+<td><?php the_field('tour_includes'); ?></td>
+</tr>
+<?php endif; ?>
+<?php if (get_field('tour_not_includes')): ?>
+<tr>
+<td>Tour does not includes</td>
+<td><?php the_field('tour_not_includes'); ?></td>
 </tr>
 <?php endif; ?>
 </table>

@@ -26,8 +26,12 @@ $(document).ready(function() {
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    adaptiveHeight: true
+    autoplaySpeed: 4000,
+    adaptiveHeight: true,
+    fade: true,
+    cssEase: 'linear',
+    pauseOnFocus: false,
+    pauseOnHover: false
   });
   $('.tours-slider').slick({
     infinite: true,
@@ -92,7 +96,7 @@ $(document).ready(function() {
     if (sessionStorage.getItem('imgs') == null) {
       sessionStorage.setItem('imgs', url);
     } else {
-      let temp = sessionStorage.getItem('imgs')+','+url;
+      let temp = sessionStorage.getItem('imgs') + ',' + url;
       sessionStorage.setItem('imgs', temp);
     }
   });
@@ -100,8 +104,8 @@ $(document).ready(function() {
     $(this).remove();
     let url = $(this).attr('data-src');
     let idx = imgs.indexOf(url);
-    if(idx >= 0){
-     imgs.splice(idx, 1);
+    if (idx >= 0) {
+      imgs.splice(idx, 1);
     }
     if (imgs.length != 0) {
       let arr = imgs.join(',');

@@ -48,9 +48,11 @@ header {
     .drawer-nav {
       position: relative;
       margin-right: $font-size-base*12;
+      @include media-xlg() {
+        margin-right: 0;
+      }
       @include media-md() {
         position: fixed;
-        margin-right: 0;
       }
 
       .drawer-menu {
