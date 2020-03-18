@@ -12,6 +12,7 @@ get_header(); ?>
 <div class="wrap">
 <div class="news-list">
 <?php
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 if (have_posts()): while (have_posts()): the_post();
 $id = get_the_ID();
 $t = get_the_title();

@@ -53,7 +53,9 @@ $c_term_name = $c_term->name;
 </aside>
 
 <div class="main">
-<?php if (have_posts()):
+<?php
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+if (have_posts()):
 $current_pgae = get_query_var('paged');
 $current_pgae = $current_pgae == 0 ? '1' : $current_pgae;
 ?>

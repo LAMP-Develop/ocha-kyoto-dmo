@@ -32,6 +32,7 @@ $c_term_name = $c_term->name;
 <div class="main">
 <div class="tours-lists">
 <?php
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 if (have_posts()): while (have_posts()): the_post();
 $t = get_the_title();
 $id = get_the_ID();
