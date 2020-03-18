@@ -76,11 +76,10 @@ if (has_post_thumbnail()) {
 <div class="wrap">
 
 <div class="dmp-2nd">
-  <p class="txt-c"><span class="b big">DMO Tour 2nd Edition！</span>
-  <br>We are now planning to organize Kyoto countryside guided tour.
-  <br>We would like to specialize unique, private and day tour in Kyoto tea country.
-  <br>Just wait till you see what’s coming next version !
-  </p>
+<p class="txt-c"><span class="b big">DMO Tour 2nd Edition！</span>
+<br>We are now planning to organize Kyoto countryside guided tour.
+<br>We would like to specialize unique, private and day tour in Kyoto tea country.
+<br>Just wait till you see what’s coming next version !</p>
 </div>
 
 <div class="btn txt-c mt-2">
@@ -169,7 +168,7 @@ if (has_post_thumbnail()) {
 <section class="sec">
 <div class="wrap">
 <h2 class="ttl2 txt-c">
-<span class="uppercase crimson">Model Course</span>
+<span class="uppercase crimson">ADDITIONAL ITINERARIES</span>
 <img src="<?php echo $wp_url; ?>/lib/images/icon_tours.png" alt="tours">
 </h2>
 <div class="tours-slider-wrap">
@@ -307,9 +306,9 @@ if ($pics === null || $pics === '') {
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
 <div class="wrap">
-<div class="btn txt-c mt-2">
+<!-- <div class="btn txt-c mt-2">
 <a class="crimson" href="https://www.instagram.com/ochanokyotodmo/" target="_blank"><i class="fab fa-instagram mr-05"></i>Instagram</a>
-</div>
+</div> -->
 <div class="mt-3 txt-c">
 <a href="<?php echo $home; ?>/gallery/">
 <img src="<?php echo $wp_url; ?>/lib/images/bnr_gallery.png" alt="">

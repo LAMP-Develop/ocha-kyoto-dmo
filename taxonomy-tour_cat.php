@@ -5,7 +5,7 @@ get_header(); ?>
 
 <div class="mv-sub">
 <img src="<?php echo $wp_url; ?>/lib/images/mv_tours.png" alt="">
-<h2 class="txt-c color-white">List of tours</h2>
+<h2 class="txt-c color-white">Find Your Tour</h2>
 </div>
 
 <section class="sec">

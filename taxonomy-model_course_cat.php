@@ -5,7 +5,7 @@ get_header(); ?>
 
 <div class="mv-sub">
 <img src="<?php echo $wp_url; ?>/lib/images/mv_tours.png" alt="">
-<h2 class="txt-c color-white">Model Course</h2>
+<h2 class="txt-c color-white">Addnl. Itineraries</h2>
 </div>
 
 <section class="sec">

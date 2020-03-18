@@ -193,7 +193,7 @@ for ($i=1; $i <= 9 ; $i++) {
 <?php endif; ?>
 <?php if (get_field('tour_not_includes')): ?>
 <tr>
-<td>Tour does not includes</td>
+<td>Tour does NOT includes</td>
 <td><?php the_field('tour_not_includes'); ?></td>
 </tr>
 <?php endif; ?>
