@@ -81,12 +81,28 @@ $(document).ready(function() {
   } else {
     console.log('no');
   }
+
+  if (sessionStorage.getItem('imgs') != null) {
+    let imgs_arr = new Array();
+    imgs_arr = sessionStorage.getItem('imgs').split(",");
+    imgs_arr.forEach(function(val) {
+      $('.gallery-lists .card[data-src="'+val+'"]').css({
+        'opacity':'0.5',
+        'pointer-events':'none',
+      });
+    });
+  }
+
   if (sessionStorage.getItem('count') == null) {
     $('.download-btn .counts').text('0');
   } else {
     $('.download-btn .counts').text(sessionStorage.getItem('count'));
   }
   $('.gallery-lists .card').on('click', function() {
+    $(this).css({
+      'opacity':'0.5',
+      'pointer-events':'none',
+    });
     let url = $(this).attr('data-src');
     let count = $('.download-btn .counts');
     let plus = parseInt(count.text()) + 1;
