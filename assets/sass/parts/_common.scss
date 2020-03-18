@@ -665,4 +665,10 @@ body {
     line-height: 1;
     font-family: 'Crimson Text', serif;
   }
+
+  a:hover,
+  .current {
+    background-color: $primary;
+    color: $white;
+  }
 }
