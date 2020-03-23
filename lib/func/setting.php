@@ -109,7 +109,6 @@ function SearchFilter($query)
         $query->set('post_type', [
           'post',
           'events',
-          'gallery',
           'model_course',
           'news',
           'tours'
