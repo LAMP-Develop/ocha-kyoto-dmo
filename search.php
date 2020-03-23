@@ -46,6 +46,19 @@ $t = get_the_title();
 $id = get_the_ID();
 $p = get_the_permalink();
 $type = get_post_type();
+if ($type == 'post') {
+    $type_name = 'Blog';
+} elseif($type == 'events') {
+    $type_name = 'Event';
+} elseif($type == 'gallery') {
+    $type_name = 'Photo gallery';
+} elseif($type == 'model_course') {
+    $type_name = 'Addnl. Itineraries';
+} elseif($type == 'news') {
+    $type_name = 'News';
+} elseif($type == 'tours') {
+    $type_name = 'Tour';
+}
 $overview_content = get_field('overview_content', $id);
 $limit = 100;
 if (mb_strlen($overview_content) > $limit) {
@@ -64,7 +77,7 @@ if (has_post_thumbnail()) {
 <a href="<?php echo $p; ?>">
 <figure>
 <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
-<span class="category-name"><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></span>
+<span class="category-name"><?php echo $type_name; ?></span>
 </figure>
 <div class="txt">
 <h3><?php echo $t; ?></h3>
