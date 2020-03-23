@@ -5,6 +5,15 @@ body {
   background-color: $white;
 }
 
+input,
+textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-appearance: none;
+  max-width: 100%;
+}
+
 .crimson {
   font-family: 'Crimson Text', serif;
 }
@@ -666,8 +675,8 @@ body {
     font-family: 'Crimson Text', serif;
   }
 
-  a:hover,
-  .current {
+  .current,
+  a:hover {
     background-color: $primary;
     color: $white;
   }
