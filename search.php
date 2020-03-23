@@ -16,28 +16,7 @@ get_header(); ?>
 </div>
 
 <section class="sec">
-<div class="wrap tow-column">
-
-<aside class="sidebar">
-<div class="inner category">
-<h3 class="crimson">Blog category</h3>
-<ul>
-<?php
-$args = [
-    'parent' => 1,
-    'hide_empty' => 0,
-];
-$categories = get_categories($args);
-foreach ($categories as $key => $cat):
-?>
-<li>
-<a href="<?php echo $home.'/blog/'.$cat->slug; ?>"><?php echo $cat->cat_name; ?></a>
-</li>
-<?php endforeach; ?>
-</ul>
-</div>
-</aside>
-
+<div class="wrap">
 <div class="main">
 <div class="tours-lists">
 <?php
