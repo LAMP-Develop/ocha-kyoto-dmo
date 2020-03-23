@@ -7,7 +7,7 @@ function twpp_enqueue_styles()
         'main-style',
         get_template_directory_uri().'/lib/css/style.css',
         [],
-        '1.2.0',
+        '1.2.1',
         'all'
     );
 }
@@ -21,7 +21,7 @@ function add_my_scripts()
         'base-script',
         get_template_directory_uri().'/lib/js/bundle.js',
         [],
-        '1.2.0',
+        '1.2.1',
         true
     );
 }
