@@ -106,12 +106,14 @@ add_filter('auto_update_plugin', '__return_false');
 function SearchFilter($query)
 {
     if (!is_admin() && $query->is_main_query() && $query->is_search()) {
-        $query->set('post_type', 'post');
-        $query->set('post_type', 'events');
-        $query->set('post_type', 'gallery');
-        $query->set('post_type', 'model_course');
-        $query->set('post_type', 'news');
-        $query->set('post_type', 'tours');
+        $query->set('post_type', [
+          'post',
+          'events',
+          'gallery',
+          'model_course',
+          'news',
+          'tours'
+        ]);
     }
 }
 add_action('pre_get_posts', 'SearchFilter');
