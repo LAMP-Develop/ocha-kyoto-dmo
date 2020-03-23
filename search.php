@@ -73,6 +73,19 @@ if (has_post_thumbnail()) {
 }
 ?>
 
+<?php if ($type === 'gallery'):
+$pic = get_field('gallery_pic', $id);
+?>
+<div class="card">
+<figure>
+<img src="<?php echo $pic; ?>" alt="<?php echo $t; ?>">
+<span class="category-name"><?php echo $type_name; ?></span>
+</figure>
+<div class="txt">
+<h3><?php echo $t; ?></h3>
+</div>
+</div>
+<?php else: ?>
 <div class="card">
 <a href="<?php echo $p; ?>">
 <figure>
@@ -84,6 +97,7 @@ if (has_post_thumbnail()) {
 </div>
 </a>
 </div>
+<?php endif; ?>
 
 <?php endwhile; ?>
 <?php else: ?>
