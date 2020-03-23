@@ -24,6 +24,9 @@ get_header(); ?>
 <p class="txt-c">
 <img src="<?php echo $wp_url; ?>/lib/images/top_map.png" alt="">
 </p>
+<div class="btn txt-c mt-2">
+<a class="crimson" href="<?php echo $home; ?>/pdf/rootmap.pdf">Root map</a>
+</div>
 </div>
 </div>
 

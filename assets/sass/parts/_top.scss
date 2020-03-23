@@ -302,6 +302,7 @@
 }
 
 .dmp-2nd {
+  margin-top: 3rem;
   box-sizing: border-box;
   border: solid 5px $primary;
   padding: 1rem;
@@ -309,6 +310,7 @@
   background-size: cover;
   text-align: right;
   @include media-md() {
+    padding: 10rem .5rem .5rem .5rem;
     text-align: center;
   }
 }
