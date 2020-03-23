@@ -302,32 +302,13 @@
 }
 
 .dmp-2nd {
-  z-index: 1;
-  position: relative;
-  background: url("../images/2nd_bg_pc.png") no-repeat center center;
-  background-size: cover;
   box-sizing: border-box;
-  padding: 3rem;
-  margin-top: 3rem;
+  border: solid 5px $primary;
+  padding: 1rem;
+  background: url("../images/bg_dmo_2nd.png") no-repeat center center;
+  background-size: cover;
+  text-align: right;
   @include media-md() {
-    background: url("../images/2nd_bg_sp.png") no-repeat center center;
-    background-size: cover;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 10%;
-    left: 3.5%;
-    width: 93%;
-    height: 80%;
-    background-color: rgba($dark, 0.7);
-  }
-
-  p {
-    z-index: 2;
-    position: relative;
-    color: $white;
+    text-align: center;
   }
 }

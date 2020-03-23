@@ -76,10 +76,7 @@ if (has_post_thumbnail()) {
 <div class="wrap">
 
 <div class="dmp-2nd">
-<p class="txt-c"><span class="b big">DMO Tour 2nd Edition！</span>
-<br>We are now planning to organize Kyoto countryside guided tour.
-<br>We would like to specialize unique, private and day tour in Kyoto tea country.
-<br>Just wait till you see what’s coming next version !</p>
+<img src="<?php echo $wp_url; ?>/lib/images/dmo_2nd_inner.png" alt="">
 </div>
 
 <div class="btn txt-c mt-2">
