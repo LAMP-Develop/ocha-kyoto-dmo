@@ -310,6 +310,8 @@
   background-size: cover;
   text-align: right;
   @include media-md() {
+    background: url("../images/bg_dmo_2nd_sp.png") no-repeat center center;
+    background-size: cover;
     padding: 10rem .5rem .5rem .5rem;
     text-align: center;
   }
