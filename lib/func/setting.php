@@ -111,6 +111,7 @@ function SearchFilter($query)
           'events',
           'model_course',
           'news',
+          'gallery',
           'tours'
         ]);
     }
