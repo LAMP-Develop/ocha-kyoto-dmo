@@ -64,7 +64,7 @@ if (has_post_thumbnail()) {
 <a href="<?php echo $p; ?>">
 <figure>
 <img src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
-<span class="category-name"><?php echo $type; ?></span>
+<span class="category-name"><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></span>
 </figure>
 <div class="txt">
 <h3><?php echo $t; ?></h3>
