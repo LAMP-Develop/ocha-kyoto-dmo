@@ -15,6 +15,16 @@ require('jquery-drawer');
 $(document).ready(function() {
   let w = $(window).width();
 
+  // modal
+  $('.js-modal-open').on('click', function() {
+    $('.js-modal').fadeIn();
+    return false;
+  });
+  $('.js-modal-close').on('click', function() {
+    $('.js-modal').fadeOut();
+    return false;
+  });
+
   // drawer
   if (w <= 768) {
     $('.drawer').drawer();
@@ -86,9 +96,9 @@ $(document).ready(function() {
     let imgs_arr = new Array();
     imgs_arr = sessionStorage.getItem('imgs').split(",");
     imgs_arr.forEach(function(val) {
-      $('.gallery-lists .card[data-src="'+val+'"]').css({
-        'opacity':'0.5',
-        'pointer-events':'none',
+      $('.gallery-lists .card[data-src="' + val + '"]').css({
+        'opacity': '0.5',
+        'pointer-events': 'none',
       });
     });
   }
@@ -100,8 +110,8 @@ $(document).ready(function() {
   }
   $('.gallery-lists .card').on('click', function() {
     $(this).css({
-      'opacity':'0.5',
-      'pointer-events':'none',
+      'opacity': '0.5',
+      'pointer-events': 'none',
     });
     let url = $(this).attr('data-src');
     let count = $('.download-btn .counts');

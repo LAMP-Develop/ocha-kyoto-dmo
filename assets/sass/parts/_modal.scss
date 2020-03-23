@@ -1,0 +1,103 @@
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.modal__bg {
+  background: rgba(0,0,0,0.6);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal__content {
+  background: $white;
+  left: 50%;
+  padding: $font-size-base*2;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  border-radius: 0.5rem;
+
+  input {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $font-size-base;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    width: 70%;
+    border: solid 1px $gray;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+
+  button {
+    color: $white;
+    background-color: $primary;
+    border: 0;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    padding: 0.65em 2em;
+
+    &::after {
+      content: none;
+    }
+
+    .fas {
+      margin-right: 5px;
+    }
+  }
+}
+
+.js-modal-open {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0.3rem 0.8rem !important;
+  background-color: $primary;
+  color: $white;
+}
+
+.drawer-menu {
+  .sp-only {
+    form {
+      box-sizing: border-box;
+      padding: 0 0.5rem;
+
+      input {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $font-size-base;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        width: 55%;
+        border: solid 1px $gray;
+        border-top-left-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
+      }
+
+      button {
+        color: $white;
+        background-color: $primary;
+        border: 0;
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+        padding: 0.65em 1em;
+
+        &::after {
+          content: none;
+        }
+
+        .fas {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

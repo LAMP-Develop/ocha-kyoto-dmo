@@ -100,3 +100,18 @@ add_filter('allow_major_auto_core_updates', '__return_false');
 add_filter('allow_minor_auto_core_updates', '__return_true');
 add_filter('auto_update_theme', '__return_false');
 add_filter('auto_update_plugin', '__return_false');
+
+
+// 検索制御
+function SearchFilter($query)
+{
+    if (!is_admin() && $query->is_main_query() && $query->is_search()) {
+        $query->set('post_type', 'post');
+        $query->set('post_type', 'events');
+        $query->set('post_type', 'gallery');
+        $query->set('post_type', 'model_course');
+        $query->set('post_type', 'news');
+        $query->set('post_type', 'tours');
+    }
+}
+add_action('pre_get_posts', 'SearchFilter');

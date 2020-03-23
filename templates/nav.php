@@ -49,12 +49,31 @@ $wp_url = get_template_directory_uri(); ?>
 <span>Inquiry</span>
 </a>
 </li>
+<li class="sp-only mt-1">
+<form action="<?php echo $home; ?>" method="get">
+<input type="search" name="s" placeholder="keyword" autofocus>
+<button type="submit"><i class="fas fa-search"></i>Search</button>
+</form>
+</li>
 </ul>
 </nav>
 <button type="button" class="drawer-toggle drawer-hamburger sp-only">
 <span class="drawer-hamburger-icon"></span>
 </button>
 <div class="other-link pc-only">
+<a class="js-modal-open"><i class="fas fa-search"></i></a>
 <a class="crimson b" href="<?php echo $home; ?>/news/">News</a>
 <a class="crimson b" href="<?php echo $home; ?>/inquiry/">Inquiry</a>
+</div>
+
+<!-- modal -->
+<div class="modal js-modal">
+<div class="modal__bg js-modal-close"></div>
+<div class="modal__content">
+<form action="<?php echo $home; ?>" method="get">
+<input type="search" name="s" placeholder="keyword" autofocus>
+<button type="submit"><i class="fas fa-search"></i>Search</button>
+</form>
+<!-- <a class="js-modal-close">閉じる</a> -->
+</div>
 </div>
