@@ -24,9 +24,15 @@ get_header(); ?>
 <p class="txt-c">
 <img src="<?php echo $wp_url; ?>/lib/images/top_map.png" alt="">
 </p>
-<div class="btn txt-c mt-2">
-<a class="crimson" href="<?php echo $home; ?>/pdf/rootmap.pdf" target="_blank">Root map</a>
 </div>
+</div>
+
+<div class="sec bg-beige">
+<h3 class="txt-c">
+<img src="<?php echo $wp_url; ?>/lib/images/loadmap_btn.svg" alt="rootmap">
+</h3>
+<div class="btn txt-c mt-2">
+<a class="crimson" href="<?php echo $home; ?>/pdf/rootmap.pdf" target="_blank">More</a>
 </div>
 </div>
 
