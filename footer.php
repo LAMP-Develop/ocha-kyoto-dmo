@@ -43,7 +43,7 @@ $wp_url = get_template_directory_uri(); ?>
 <p class="txt-r">
 <a class="mr-05" href="<?php echo $home; ?>/privacy-policy/"><small>Privacypolicy</small></a>
 <a class="mr-05" href="<?php echo $home; ?>/website-terms-of-use/"><small>Website terms</small></a>
-<a href="<?php echo $home; ?>/photo-library-terms-of-use/"><small>Photo library terms</small></a>
+<a href="<?php echo $home; ?>/photo-gallery-terms-of-use/"><small>Photo gallery terms</small></a>
 </p>
 </div>
 </div>
