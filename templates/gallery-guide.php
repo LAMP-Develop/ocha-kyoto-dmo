@@ -40,6 +40,6 @@ $wp_url = get_template_directory_uri();
 </div>
 </li>
 </ol>
-<p class="txt-r mt-1"><a href="<?php echo $home; ?>/photo-library-terms-of-use/" target="_blank"><small>Kyoto Tea Country library Terms of Use ＞</small></a></p>
+<p class="txt-r mt-1"><a href="<?php echo $home; ?>/photo-gallery-terms-of-use/" target="_blank"><small>Ocha no Kyoto Photo Gallery Terms Of Use ＞</small></a></p>
 </div>
 </div>
