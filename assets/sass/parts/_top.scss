@@ -302,7 +302,7 @@
 }
 
 .dmp-2nd {
-  margin-top: 3rem;
+  margin-top: 6rem;
   box-sizing: border-box;
   border: solid 5px $primary;
   padding: 1rem;
@@ -310,6 +310,7 @@
   background-size: cover;
   text-align: center;
   @include media-md() {
+    margin-top: 5rem;
     background: url("../images/bg_dmo_2nd_sp.png") no-repeat center center;
     background-size: cover;
     padding: 10rem .5rem .5rem .5rem;

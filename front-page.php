@@ -27,7 +27,7 @@ get_header(); ?>
 </div>
 </div>
 
-<div class="sec bg-beige">
+<div class="sec">
 <h3 class="txt-c">
 <img src="<?php echo $wp_url; ?>/lib/images/loadmap_btn.svg" alt="rootmap">
 </h3>
